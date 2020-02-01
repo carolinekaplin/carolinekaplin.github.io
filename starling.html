@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Swarming Flies</title>
+
+	<style>
+		.fly{
+			width:100px;
+			height:50px;
+			background-image:url(https://cdn.clipart.email/f91652f1703f130cd5bb70ee9558993e_cartoon-fly-clipart_500-401.png);
+			background-size:contain;
+			background-repeat: no-repeat;
+			position:absolute;
+			display:inline-block;
+			z-index: 1;
+		}
+
+
+
+
+}
+
+
+
+
+	</style>
+
+
+
+</head>
+<body>
+
+	
+<script type="text/javascript">
+
+
+
+	
+	function makeflies () {
+		var fly = document.createElement("div");
+		document.body.appendChild(fly);
+		fly.classList.add("fly");
+		
+
+		// console.log(Math.round(Math.random()*1000)+"px");
+	
+     function setPosition() {
+         fly.style.left = Math.random() * 1000 + "px";
+         fly.style.top = Math.random() * 1000 + "px";}
+
+
+
+
+         setInterval(setPosition, 100);
+
+
+	
+};
+
+
+
+		
+
+	for(var i=0;i<100; i++){
+		makeflies();
+	}
+
+</script>
+<!-- 	write a function that makes divs
+ -->
+</body>
+</html>
